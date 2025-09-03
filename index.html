@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raj Pandey | Portfolio</title>
+  <meta name="description" content="Portfolio of Raj Pandey — B.Tech CSE student with a Minor in ML. Projects in Machine Learning, IoT, and Web Development." />
+  <meta name="theme-color" content="#0B5394" />
+  <meta property="og:title" content="Raj Pandey | Portfolio" />
+  <meta property="og:description" content="B.Tech CSE (ML minor) — projects in ML, IoT, and Web." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#about">Skip to content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="brand">Raj Pandey</div>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="raj-pandey.jpg" alt="Raj Pandey headshot" />
+    </div>
+    <div class="hero-content">
+      <h1>Hi, I'm Raj Pandey</h1>
+      <p>B.Tech CSE Student • Minor in ML • Building projects in ML, IoT & Web Dev</p>
+      <div class="hero-actions">
+        <a class="btn" href="Raj_Pandey_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn outline" href="https://github.com/RajPandey2503" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn outline" href="https://www.linkedin.com/in/raj-pandey-6373611b4/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- About -->
+    <section id="about" class="card fade-in">
+      <h2>About Me</h2>
+      <p>
+        B.Tech Computer Science and Engineering student with a Minor in Machine Learning. Skilled in Python, C++, TensorFlow, and Arduino.
+        Passionate about solving real-world problems through projects spanning ML, Web Development, and IoT/Embedded Systems.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card fade-in">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><b>Languages:</b> Python, C++, SQL, HTML, CSS, JavaScript</li>
+        <li><b>Frameworks:</b> TensorFlow, PyTorch, Scikit-learn, Keras</li>
+        <li><b>Data Tools:</b> Pandas, NumPy, Matplotlib, MySQL, MongoDB</li>
+        <li><b>IoT:</b> Arduino UNO, IR Sensor, DHT11, TM1637, LDR, Ultrasonic</li>
+        <li><b>Soft Skills:</b> Problem-Solving, Leadership, Teamwork</li>
+      </ul>
+    </section>
+
+<!-- Projects (loads dynamically) -->
+<section id="projects" class="card">
+  <h2>Projects</h2>
+
+  <!-- Loading state -->
+  <div id="projects-loading">
+    <div class="spinner"></div>
+    <span>Loading projects...</span>
+  </div>
+
+  <!-- Fallback if JavaScript is disabled -->
+  <noscript>
+    <p><b>Note:</b> Projects require JavaScript to load.  
+    You can still view them directly on my  
+    <a href="https://github.com/RajPandey2503" target="_blank" rel="noopener">GitHub profile</a>.</p>
+  </noscript>
+
+  <div class="project-grid" id="projects-container">
+    <!-- Projects will load dynamically here -->
+  </div>
+</section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="card fade-in">
+      <h2>Achievements</h2>
+      <ul>
+        <li>100-day LeetCode streak (Jan 2024)</li>
+        <li>Built IoT + ML integrated projects</li>
+        <li>Deployed personal portfolio & multiple web apps</li>
+      </ul>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="card fade-in">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Social Networks — NPTEL (Jan 2024)</li>
+        <li>Compiler Design — NPTEL (Aug 2024)</li>
+        <li>Python Course For Beginners — Scaler (Jan 2025)</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card fade-in">
+      <h2>Contact</h2>
+      <div class="contact-links">
+        <a href="mailto:raj2503pandey@gmail.com">📧 Email</a>
+        <a href="https://www.linkedin.com/in/raj-pandey-6373611b4/" target="_blank" rel="noopener">💼 LinkedIn</a>
+        <a href="https://github.com/RajPandey2503" target="_blank" rel="noopener">👨‍💻 GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" aria-label="Scroll to top">⬆️</button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>© 2025 Raj Pandey | Built with ❤️</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

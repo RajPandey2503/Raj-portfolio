@@ -1,0 +1,44 @@
+[
+  {
+    "title": "BovEye: Animal Behavior Prediction",
+    "description": "ML pipeline for animal activity recognition using accelerometer data.",
+    "tech": "Python, TensorFlow, Scikit-learn",
+    "github": "https://github.com/RajPandey2503",
+    "live": ""
+  },
+  {
+    "title": "Book Club Web App",
+    "description": "Interactive platform with reading list, chat reactions, and dark mode.",
+    "tech": "HTML, CSS, JavaScript",
+    "github": "https://github.com/RajPandey2503",
+    "live": "https://rajpandey-bookclub.netlify.app"
+  },
+  {
+    "title": "Arduino IoT Smart Counter",
+    "description": "Sensor-based IoT system with real-time monitoring and alerts.",
+    "tech": "Arduino, C++, IR Sensor, DHT11",
+    "github": "https://github.com/RajPandey2503",
+    "live": ""
+  },
+  {
+    "title": "Sentiment Synergy",
+    "description": "Sentiment analysis using hybrid ML models with NLP preprocessing.",
+    "tech": "Python, Scikit-learn, TensorFlow, NLTK",
+    "github": "https://github.com/RajPandey2503",
+    "live": ""
+  },
+  {
+    "title": "TouriCast",
+    "description": "Tourism demand prediction using regression and data visualization.",
+    "tech": "Python, Pandas, Scikit-learn",
+    "github": "https://github.com/RajPandey2503",
+    "live": ""
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "Responsive portfolio deployed on GitHub Pages showcasing skills.",
+    "tech": "HTML, CSS, JavaScript, GitHub Pages",
+    "github": "https://github.com/RajPandey2503",
+    "live": "https://rajpandey-portfolio.github.io"
+  }
+]
