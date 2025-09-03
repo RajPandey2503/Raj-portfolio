@@ -38,7 +38,7 @@
       <h1>Hi, I'm Raj Pandey</h1>
       <p>B.Tech CSE Student • Minor in ML • Building projects in ML, IoT & Web Dev</p>
       <div class="hero-actions">
-        <a class="btn" href="Raj_Pandey_CV.pdf" target="_blank" rel="noopener">Download CV</a>
+        <a class="btn" href="Raj_pandey_CV.pdf" target="_blank" rel="noopener">Download CV</a>
         <a class="btn outline" href="https://github.com/RajPandey2503" target="_blank" rel="noopener">GitHub</a>
         <a class="btn outline" href="https://www.linkedin.com/in/raj-pandey-6373611b4/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -67,27 +67,20 @@
       </ul>
     </section>
 
-<!-- Projects (loads dynamically) -->
-<section id="projects" class="card">
-  <h2>Projects</h2>
-
-  <!-- Loading state -->
-  <div id="projects-loading">
-    <div class="spinner"></div>
-    <span>Loading projects...</span>
-  </div>
-
-  <!-- Fallback if JavaScript is disabled -->
-  <noscript>
-    <p><b>Note:</b> Projects require JavaScript to load.  
-    You can still view them directly on my  
-    <a href="https://github.com/RajPandey2503" target="_blank" rel="noopener">GitHub profile</a>.</p>
-  </noscript>
-
-  <div class="project-grid" id="projects-container">
-    <!-- Projects will load dynamically here -->
-  </div>
-</section>
+    <!-- Projects (loads dynamically) -->
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <div id="projects-loading">
+        <div class="spinner"></div>
+        <span>Loading projects...</span>
+      </div>
+      <noscript>
+        <p><b>Note:</b> Projects require JavaScript to load.  
+        You can still view them directly on my  
+        <a href="https://github.com/RajPandey2503" target="_blank" rel="noopener">GitHub profile</a>.</p>
+      </noscript>
+      <div class="project-grid" id="projects-container"></div>
+    </section>
 
     <!-- Achievements -->
     <section id="achievements" class="card fade-in">
@@ -120,10 +113,8 @@
     </section>
   </main>
 
-  <!-- Scroll to Top Button -->
   <button id="scrollTopBtn" aria-label="Scroll to top">⬆️</button>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <p>© 2025 Raj Pandey | Built with ❤️</p>
   </footer>
