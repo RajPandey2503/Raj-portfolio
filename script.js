@@ -3,7 +3,7 @@
   const STORAGE_KEY = 'theme';
   const btn = document.getElementById('theme-toggle');
   const root = document.body;
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   const saved = localStorage.getItem(STORAGE_KEY);
 
   const apply = (mode) => {
@@ -43,24 +43,23 @@
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
-// Dynamic projects loader
+// Dynamic projects loader (fetches from projects.json)
 (() => {
   const container = document.getElementById('projects-container');
   const loading = document.getElementById('projects-loading');
   if (!container) return;
 
-fetch('./projects.json')
-  .then(response => {
-    if (!response.ok) throw new Error("Projects JSON not found");
-    return response.json();
-  })
-  .then(data => {
-    console.log("Loaded projects:", data); 
+  fetch('projects.json')
+    .then(res => {
+      if (!res.ok) throw new Error('Failed to load projects.json');
+      return res.json();
+    })
     .then(projects => {
-      loading.style.display = 'none'; // hide loading spinner
-      projects.forEach(p => {
+      if (loading) loading.style.display = 'none';
+      projects.forEach((p, index) => {
         const card = document.createElement('div');
         card.className = 'project-card fade-in';
+        card.setAttribute('tabindex', '0');
         const links = [`<a href="${p.github}" target="_blank" rel="noopener">GitHub</a>`];
         if (p.live) links.push(`<a href="${p.live}" target="_blank" rel="noopener">Live Demo</a>`);
         card.innerHTML = `
@@ -70,12 +69,11 @@ fetch('./projects.json')
           <div class="project-links">${links.join(' | ')}</div>
         `;
         container.appendChild(card);
+        setTimeout(() => card.classList.add('appear'), index * 100);
       });
-      // trigger fade-in for newly added cards
-      window.dispatchEvent(new Event('scroll'));
     })
     .catch(err => {
-      loading.innerHTML = '⚠️ Unable to load projects. Please check back later.';
+      if (loading) loading.innerHTML = '⚠️ Unable to load projects. Please check back later.';
       console.error(err);
     });
 })();
